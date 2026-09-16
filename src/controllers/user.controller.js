@@ -15,10 +15,12 @@ const register =asyncHandler(async(req, res)=>{
   //remove password and refresh token filed
   //check for user creation
   //return respond
-
+    console.log("1. Register controller started");
       // 1. Get user details from frontend
     const { username, email, fullname, password } = req.body;
-     console.log(email);
+     
+    console.log("2. BODY:", req.body);
+    console.log("3. FILES:", req.files);
 
       //2.Validation
 
